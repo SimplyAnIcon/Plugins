@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>SimplyAnIcon.Plugins.Wpf</id>
+        <version>$version$</version>
+        <title>SimplyAnIcon.Plugins.Wpf</title>
+        <authors>Ericmas001</authors>
+        <licenseUrl>https://raw.githubusercontent.com/SimplyAnIcon/Plugins/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/SimplyAnIcon/Plugins</projectUrl>
+        <iconUrl>https://github.com/SimplyAnIcon/Common/raw/master/Resources/cool.png</iconUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <description>SimplyAnIcon.Plugins.Wpf</description>
+        <summary>SimplyAnIcon.Plugins.Wpf</summary>
+        <releaseNotes>Development Version</releaseNotes>
+        <copyright />
+        <language>en</language>
+        <dependencies>
+            <dependency id="SimplyAnIcon.Plugins" version="0.1.0" />
+            <dependency id="MvvmLightLibs" version="5.4.1.1" />
+        </dependencies>
+    </metadata>
+    <files>
+    	<file src="SimplyAnIcon.Plugins.Wpf\bin\$configuration$\SimplyAnIcon.Plugins.Wpf.dll" target="lib\net461\" />
+  </files>
+</package>
