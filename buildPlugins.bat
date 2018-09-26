@@ -15,7 +15,7 @@ if "%nuget%" == "" (
 )
 
 call %NuGet% restore SimplyAnIcon.Plugins.sln -NonInteractive
-msbuild SimplyAnIcon.Plugins.sln /p:Configuration="%config%" /p:DebugSymbols=true /p:DebugType=full /p:Platform="Any CPU" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=diag /nr:false
+msbuild SimplyAnIcon.Plugins.sln /p:Configuration="%config%" /p:DebugSymbols=true /p:DebugType=full /p:Platform="Any CPU" /p:GenerateDocumentation=true /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=diag /nr:false
 
 mkdir Build
 mkdir Build\lib
