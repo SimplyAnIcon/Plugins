@@ -16,6 +16,8 @@
         <language>en</language>
     </metadata>
     <files>
-    	<file src="SimplyAnIcon.Plugins\bin\$configuration$\SimplyAnIcon.Plugins.dll" target="lib\net461\" />
+      <file src="SimplyAnIcon.Plugins\bin\$configuration$\SimplyAnIcon.Plugins.dll" target="lib\net461\" />
+      <file src="SimplyAnIcon.Plugins\bin\$configuration$\SimplyAnIcon.Plugins.xml" target="lib\net461\" />
+      <file src="SimplyAnIcon.Plugins\bin\$configuration$\SimplyAnIcon.Plugins.pdb" target="lib\net461\" />
   </files>
 </package>

@@ -1,9 +1,8 @@
-﻿using System.Windows;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 using GalaSoft.MvvmLight;
 using SimplyAnIcon.Plugins.Wpf.Util;
 
-namespace SimplyAnIcon.Plugins.Wpf.V1
+namespace SimplyAnIcon.Plugins.Wpf.V1.MenuItemViewModels
 {
     public class MenuItemViewModel : ViewModelBase
     {

@@ -2,6 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 using SimplyAnIcon.Plugins.V1;
+using SimplyAnIcon.Plugins.Wpf.V1.MenuItemViewModels;
 
 namespace SimplyAnIcon.Plugins.Wpf.V1
 {
@@ -15,7 +16,7 @@ namespace SimplyAnIcon.Plugins.Wpf.V1
         /// <summary>
         /// Will never be called if CustomConfigControl is null
         /// </summary>
-        void OnConfigSave(UserControl control);
+        void OnConfigSave();
 
         /// <summary>
         /// If null or empty, will not be showed

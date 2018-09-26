@@ -24,6 +24,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>3</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Debug\SimplyAnIcon.Plugins.Wpf.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -80,8 +81,8 @@
     </Compile>
     <Compile Include="Util\FastObservableCollection.cs" />
     <Compile Include="V1\ISimplyAWpfPlugin.cs" />
-    <Compile Include="V1\MenuItemViewModel.cs" />
-    <Compile Include="V1\SeparatorMenuItemViewModel.cs" />
+    <Compile Include="V1\MenuItemViewModels\MenuItemViewModel.cs" />
+    <Compile Include="V1\MenuItemViewModels\SeparatorMenuItemViewModel.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
