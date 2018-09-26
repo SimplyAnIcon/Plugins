@@ -8,13 +8,13 @@ namespace SimplyAnIcon.Plugins.V1.Settings
     public abstract class AbstractSettingValue
     {
         /// <summary>
-        /// Name
+        /// Key
         /// </summary>
-        public abstract string Name { get; }
-        
+        public abstract string Key { get; }
+
         /// <summary>
-        /// ValyeType
+        /// Label
         /// </summary>
-        public abstract Type ValyeType { get; }
+        public abstract string Label { get; }
     }
 }

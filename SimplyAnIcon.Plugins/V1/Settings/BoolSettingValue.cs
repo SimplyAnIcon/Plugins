@@ -10,15 +10,16 @@ namespace SimplyAnIcon.Plugins.V1.Settings
         /// <summary>
         /// BoolSettingValue
         /// </summary>
-        public BoolSettingValue(string name)
+        public BoolSettingValue(string key, string label)
         {
-            Name = name;
+            Key = key;
+            Label = label;
         }
 
         /// <inheritdoc />
-        public override string Name { get; }
+        public override string Key { get; }
 
         /// <inheritdoc />
-        public override Type ValyeType => typeof(bool);
+        public override string Label { get; }
     }
 }

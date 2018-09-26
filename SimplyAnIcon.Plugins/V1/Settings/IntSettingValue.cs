@@ -10,16 +10,17 @@ namespace SimplyAnIcon.Plugins.V1.Settings
         /// <summary>
         /// IntSettingValue
         /// </summary>
-        public IntSettingValue(string name)
+        public IntSettingValue(string key, string label)
         {
-            Name = name;
+            Key = key;
+            Label = label;
         }
 
         /// <inheritdoc />
-        public override string Name { get; }
+        public override string Key { get; }
 
         /// <inheritdoc />
-        public override Type ValyeType => typeof(int);
+        public override string Label { get; }
 
         /// <summary>
         /// Minimum (Default int.MinValue)
