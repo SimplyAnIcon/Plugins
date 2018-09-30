@@ -1,4 +1,5 @@
-﻿using System.Windows.Input;
+﻿using System;
+using System.Windows.Input;
 using GalaSoft.MvvmLight;
 using SimplyAnIcon.Plugins.Wpf.Util;
 
@@ -9,8 +10,11 @@ namespace SimplyAnIcon.Plugins.Wpf.V1.MenuItemViewModels
         private bool _isEnabled = true;
         private object _iconPath;
         private int _height = 21;
-        private bool _staysOpenOnClick = false;
+        private bool _staysOpenOnClick;
+        private bool _isSubMenuOpen;
         private string _name;
+
+        public event EventHandler<bool> OnForceMenuOpen = delegate { };
 
         public bool IsEnabled
         {
@@ -36,6 +40,12 @@ namespace SimplyAnIcon.Plugins.Wpf.V1.MenuItemViewModels
             set => Set(ref _staysOpenOnClick, value);
         }
 
+        public bool IsSubMenuOpen
+        {
+            get => _isSubMenuOpen;
+            set => Set(ref _isSubMenuOpen, value);
+        }
+
         public ICommand Action { get; set; }
 
         public string Name
@@ -45,5 +55,10 @@ namespace SimplyAnIcon.Plugins.Wpf.V1.MenuItemViewModels
         }
 
         public FastObservableCollection<MenuItemViewModel> Children { get; } = new FastObservableCollection<MenuItemViewModel>();
+
+        public void ForceMenuOpen(bool isForced)
+        {
+            OnForceMenuOpen(this, isForced);
+        }
     }
 }
