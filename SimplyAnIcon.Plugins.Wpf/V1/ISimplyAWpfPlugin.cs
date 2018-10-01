@@ -14,11 +14,6 @@ namespace SimplyAnIcon.Plugins.Wpf.V1
         UserControl CustomConfigControl { get; }
 
         /// <summary>
-        /// Will never be called if CustomConfigControl is null
-        /// </summary>
-        void OnConfigSave();
-
-        /// <summary>
         /// If null or empty, will not be showed
         /// </summary>
         IEnumerable<MenuItemViewModel> MenuItems { get; }
