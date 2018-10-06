@@ -79,6 +79,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Resources\SimplyMenuResources.xaml.cs">
+      <DependentUpon>SimplyMenuResources.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Util\FastObservableCollection.cs" />
     <Compile Include="V1\ISimplyAWpfPlugin.cs" />
     <Compile Include="V1\MenuItemViewModels\MenuItemViewModel.cs" />
@@ -99,6 +102,13 @@
       <Project>{5d7e64a2-8f98-4229-ad1f-b6d6da9ecbb4}</Project>
       <Name>SimplyAnIcon.Plugins</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Page Include="Resources\SimplyMenuResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
