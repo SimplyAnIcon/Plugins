@@ -9,7 +9,7 @@ namespace SimplyAnIcon.Plugins.Wpf.V1.MenuItemViewModels
     {
         private bool _isEnabled = true;
         private object _iconPath;
-        private int _height = 21;
+        private double _height = 21;
         private bool _staysOpenOnClick;
         private bool _isSubMenuOpen;
         private string _name;
@@ -28,7 +28,7 @@ namespace SimplyAnIcon.Plugins.Wpf.V1.MenuItemViewModels
             set => Set(ref _iconPath, value);
         }
 
-        public int Height
+        public double Height
         {
             get => _height;
             set => Set(ref _height, value);
