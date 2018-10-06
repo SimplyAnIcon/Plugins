@@ -10,7 +10,7 @@ namespace SimplyAnIcon.Plugins.Wpf.V1.MenuItemViewModels
     {
         private bool _isEnabled = true;
         private object _iconPath;
-        private object _itemStyle = FindDefaultStyle();
+        private Style _itemStyle = null;
         private double _height = 21;
         private bool _staysOpenOnClick;
         private bool _isSubMenuOpen;
@@ -30,7 +30,7 @@ namespace SimplyAnIcon.Plugins.Wpf.V1.MenuItemViewModels
             set => Set(ref _iconPath, value);
         }
 
-        public object ItemStyle
+        public Style ItemStyle
         {
             get => _itemStyle;
             set => Set(ref _itemStyle, value);
@@ -67,18 +67,6 @@ namespace SimplyAnIcon.Plugins.Wpf.V1.MenuItemViewModels
         public void ForceMenuOpen(bool isForced)
         {
             OnForceMenuOpen(this, isForced);
-        }
-
-        private static object FindDefaultStyle()
-        {
-            try
-            {
-                return Application.Current.Resources["SimplyIconMenuItemStyle"];
-            }
-            catch
-            {
-                return null;
-            }
         }
     }
 }
