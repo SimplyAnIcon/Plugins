@@ -2,7 +2,7 @@
 {
     public class SeparatorMenuItemViewModel : MenuItemViewModel
     {
-        public SeparatorMenuItemViewModel()
+        public SeparatorMenuItemViewModel(MenuItemViewModel parent) : base(parent)
         {
             IsEnabled = false;
             Height = 8;

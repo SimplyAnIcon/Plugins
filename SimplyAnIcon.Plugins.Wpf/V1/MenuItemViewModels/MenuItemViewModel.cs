@@ -16,6 +16,8 @@ namespace SimplyAnIcon.Plugins.Wpf.V1.MenuItemViewModels
         private bool _isSubMenuOpen;
         private string _name;
 
+        public MenuItemViewModel Parent { get; }
+
         public event EventHandler<bool> OnForceMenuOpen = delegate { };
 
         public bool IsEnabled
@@ -63,6 +65,14 @@ namespace SimplyAnIcon.Plugins.Wpf.V1.MenuItemViewModels
         }
 
         public FastObservableCollection<MenuItemViewModel> Children { get; } = new FastObservableCollection<MenuItemViewModel>();
+
+        public string FullName => Parent == null ? Name : $"{Parent.FullName}/{Name}";
+        public MenuItemViewModel Root => Parent == null ? this : Parent.Root;
+
+        public MenuItemViewModel(MenuItemViewModel parent)
+        {
+            Parent = parent;
+        }
 
         public void ForceMenuOpen(bool isForced)
         {
