@@ -21,5 +21,7 @@
     </metadata>
     <files>
       <file src="SimplyAnIcon.Plugins.Wpf\bin\$configuration$\SimplyAnIcon.Plugins.Wpf.dll" target="lib\net461\" />
+      <file src="SimplyAnIcon.Plugins.Wpf\bin\$configuration$\SimplyAnIcon.Plugins.Wpf.pdb" target="lib\net461\" />
+      <file src="SimplyAnIcon.Plugins.Wpf\bin\$configuration$\SimplyAnIcon.Plugins.Wpf.xml" target="lib\net461\" />
   </files>
 </package>
