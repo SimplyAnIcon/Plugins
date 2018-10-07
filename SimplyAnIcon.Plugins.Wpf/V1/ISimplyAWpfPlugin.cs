@@ -6,6 +6,9 @@ using SimplyAnIcon.Plugins.Wpf.V1.MenuItemViewModels;
 
 namespace SimplyAnIcon.Plugins.Wpf.V1
 {
+    /// <summary>
+    /// ISimplyAWpfPlugin
+    /// </summary>
     public interface ISimplyAWpfPlugin : ISimplyAPlugin
     {
         /// <summary>
@@ -18,6 +21,9 @@ namespace SimplyAnIcon.Plugins.Wpf.V1
         /// </summary>
         IEnumerable<MenuItemViewModel> MenuItems { get; }
 
+        /// <summary>
+        /// ResourceDictionaries
+        /// </summary>
         IEnumerable<ResourceDictionary> ResourceDictionaries { get; }
     }
 }

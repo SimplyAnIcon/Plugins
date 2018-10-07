@@ -13,6 +13,9 @@ using System.Windows.Threading;
 
 namespace SimplyAnIcon.Plugins.Wpf.Util
 {
+    /// <summary>
+    /// FastObservableCollection
+    /// </summary>
     public class FastObservableCollection<T> : ObservableCollection<T>
     {
         private readonly object _locker = new object();
