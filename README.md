@@ -1,39 +1,10 @@
 # SimplyAnIcon.Plugins
-[![com-ericmas001 MyGet Build Status](https://www.myget.org/BuildSource/Badge/com-ericmas001?identifier=5e2496cc-2713-4e8c-b8f6-11aeffd47d22)](https://www.myget.org/)
+[![Build Status](https://ericmas001.visualstudio.com/SimplyAnIcon/_apis/build/status/SimplyAnIcon.Plugins)](https://ericmas001.visualstudio.com/SimplyAnIcon/_build/latest?definitionId=2)
 
-###Current Version: 0.7.0 *(2018-10-14)*
+SimplyAnIcon.Plugins [![NuGet](https://img.shields.io/nuget/v/SimplyAnIcon.Plugins.svg)](https://www.nuget.org/packages/SimplyAnIcon.Plugins)
+[![NuGet](https://img.shields.io/nuget/dt/SimplyAnIcon.Plugins.svg?style=social)](https://www.nuget.org/packages/SimplyAnIcon.Plugins)
 
-<table align="center" width="100%">
-    <tbody>
-        <tr>
-            <td rowspan>.Net</td>
-            <td align="center">
-            <a href="https://www.nuget.org/packages/SimplyAnIcon.Plugins/" target="_blank">
-            SimplyAnIcon.Plugins <br />
-            <img src="https://github.com/SimplyAnIcon/Common/raw/master/Resources/nuget.png" alt="NuGet" width=150 />
-            </a>
-            </td>
-            <td align="left">
-                <div class="nuget-badge">
-                    <b>PM&gt; Install-Package SimplyAnIcon.Plugins</b> <br />
-                    or Install via VS <a href="https://docs.nuget.org/consume/package-manager-dialog" target="_blank">Package Management</a> window.
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td rowspan>.Net</td>
-            <td align="center">
-            <a href="https://www.nuget.org/packages/SimplyAnIcon.Plugins.Wpf/" target="_blank">
-            SimplyAnIcon.Plugins.Wpf <br />
-            <img src="https://github.com/SimplyAnIcon/Common/raw/master/Resources/nuget.png" alt="NuGet" width=150 />
-            </a>
-            </td>
-            <td align="left">
-                <div class="nuget-badge">
-                    <b>PM&gt; Install-Package SimplyAnIcon.Plugins.Wpf</b> <br />
-                    or Install via VS <a href="https://docs.nuget.org/consume/package-manager-dialog" target="_blank">Package Management</a> window.
-                </div>
-            </td>
-        </tr>
-    </tbody>
-</table>
+SimplyAnIcon.Plugins.Wpf [![NuGet](https://img.shields.io/nuget/v/SimplyAnIcon.Plugins.Wpf.svg)](https://www.nuget.org/packages/SimplyAnIcon.Plugins.Wpf)
+[![NuGet](https://img.shields.io/nuget/dt/SimplyAnIcon.Plugins.Wpf.svg?style=social)](https://www.nuget.org/packages/SimplyAnIcon.Plugins.Wpf)
+
+![GitHub](https://img.shields.io/github/license/SimplyAnIcon/Plugins.svg)
