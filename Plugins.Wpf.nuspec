@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>SimplyAnIcon.Plugins.Wpf</id>
-        <version>0.6.1</version>
+        <version>0.7.0</version>
         <title>SimplyAnIcon.Plugins.Wpf</title>
         <authors>Ericmas001</authors>
         <licenseUrl>https://raw.githubusercontent.com/SimplyAnIcon/Plugins/master/LICENSE</licenseUrl>
@@ -16,7 +16,7 @@
         <language>en</language>
         <dependencies>
             <dependency id="SimplyAnIcon.Plugins" version="0.6.0" />
-            <dependency id="MvvmLightLibs" version="5.4.1.1" />
+            <dependency id="Com.Ericmas001.Mvvm" version="0.1.0" />
         </dependencies>
     </metadata>
     <files>

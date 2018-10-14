@@ -1,8 +1,7 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Input;
-using GalaSoft.MvvmLight;
-using SimplyAnIcon.Plugins.Wpf.Util;
+using Com.Ericmas001.Mvvm;
+using Com.Ericmas001.Mvvm.Collections;
 
 namespace SimplyAnIcon.Plugins.Wpf.V1.MenuItemViewModels
 {
@@ -16,18 +15,12 @@ namespace SimplyAnIcon.Plugins.Wpf.V1.MenuItemViewModels
         private Style _itemStyle = null;
         private double _height = 21;
         private bool _staysOpenOnClick;
-        private bool _isSubMenuOpen;
         private string _name;
 
         /// <summary>
         /// Parent
         /// </summary>
         public MenuItemViewModel Parent { get; }
-
-        /// <summary>
-        /// OnForceMenuOpen
-        /// </summary>
-        public event EventHandler<bool> OnForceMenuOpen = delegate { };
 
         /// <summary>
         /// IsEnabled
@@ -75,15 +68,6 @@ namespace SimplyAnIcon.Plugins.Wpf.V1.MenuItemViewModels
         }
 
         /// <summary>
-        /// IsSubMenuOpen
-        /// </summary>
-        public bool IsSubMenuOpen
-        {
-            get => _isSubMenuOpen;
-            set => Set(ref _isSubMenuOpen, value);
-        }
-
-        /// <summary>
         /// Action
         /// </summary>
         public ICommand Action { get; set; }
@@ -118,14 +102,6 @@ namespace SimplyAnIcon.Plugins.Wpf.V1.MenuItemViewModels
         public MenuItemViewModel(MenuItemViewModel parent)
         {
             Parent = parent;
-        }
-
-        /// <summary>
-        /// ForceMenuOpen
-        /// </summary>
-        public void ForceMenuOpen(bool isForced)
-        {
-            OnForceMenuOpen(this, isForced);
         }
     }
 }

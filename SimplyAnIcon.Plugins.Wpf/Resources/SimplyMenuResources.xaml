@@ -17,7 +17,6 @@
         <Setter Property="ItemsSource" Value="{Binding Children, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
         <Setter Property="Height" Value="{Binding Height, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
         <Setter Property="StaysOpenOnClick" Value="{Binding StaysOpenOnClick, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
-        <Setter Property="IsSubmenuOpen" Value="{Binding IsSubMenuOpen, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
         <Setter Property="Background" Value="White"/>
     </Style>
 

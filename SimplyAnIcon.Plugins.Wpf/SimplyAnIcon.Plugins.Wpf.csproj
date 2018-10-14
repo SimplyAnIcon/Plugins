@@ -68,7 +68,6 @@
     <Compile Include="Resources\SimplyMenuResources.xaml.cs">
       <DependentUpon>SimplyMenuResources.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Util\FastObservableCollection.cs" />
     <Compile Include="V1\ISimplyAWpfPlugin.cs" />
     <Compile Include="V1\MenuItemViewModels\MenuItemViewModel.cs" />
     <Compile Include="V1\MenuItemViewModels\SeparatorMenuItemViewModel.cs" />
@@ -89,15 +88,15 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="MvvmLightLibs">
-      <Version>5.4.1.1</Version>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
     <Page Include="Resources\SimplyMenuResources.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Com.Ericmas001.Mvvm">
+      <Version>0.1.0</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
