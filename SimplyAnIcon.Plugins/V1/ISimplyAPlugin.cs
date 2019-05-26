@@ -27,7 +27,7 @@ namespace SimplyAnIcon.Plugins.V1
         /// <summary>
         /// Called only one time, on plugin initialisation
         /// </summary>
-        void OnInit();
+        void OnInit(Dictionary<string, object> config);
 
         /// <summary>
         /// Called when refreshing
