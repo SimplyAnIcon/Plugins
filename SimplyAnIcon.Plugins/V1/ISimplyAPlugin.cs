@@ -30,6 +30,16 @@ namespace SimplyAnIcon.Plugins.V1
         void OnInit(Dictionary<string, object> config);
 
         /// <summary>
+        /// Called when activating
+        /// </summary>
+        void OnActivation();
+
+        /// <summary>
+        /// Called when deactivating
+        /// </summary>
+        void OnDeactivation();
+
+        /// <summary>
         /// Called when refreshing
         /// </summary>
         void OnRefresh();
