@@ -11,6 +11,7 @@ namespace SimplyAnIcon.Plugins.Wpf.V1.MenuItemViewModels
     public class MenuItemViewModel : ViewModelBase
     {
         private bool _isEnabled = true;
+        private bool _isVisible = true;
         private object _iconPath;
         private Style _itemStyle = null;
         private double _height = 21;
@@ -28,7 +29,16 @@ namespace SimplyAnIcon.Plugins.Wpf.V1.MenuItemViewModels
         public bool IsEnabled
         {
             get => _isEnabled;
-            set => Set(ref _isEnabled , value);
+            set => Set(ref _isEnabled, value);
+        }
+
+        /// <summary>
+        /// IsVisible
+        /// </summary>
+        public bool IsVisible
+        {
+            get => _isVisible;
+            set => Set(ref _isVisible, value);
         }
 
         /// <summary>
