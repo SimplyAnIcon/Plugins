@@ -9,7 +9,8 @@
            HorizontalAlignment="Center"
            VerticalAlignment="Center" 
            Source="{Binding IconPath, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
-    
+
+    <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
     <Style TargetType="{x:Type MenuItem}" x:Key="SimplyAMenuItemStyle">
         <Setter Property="Command" Value="{Binding Action}"/>
         <Setter Property="Icon" Value="{StaticResource MyIcon}"/>
@@ -18,6 +19,7 @@
         <Setter Property="Height" Value="{Binding Height, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
         <Setter Property="StaysOpenOnClick" Value="{Binding StaysOpenOnClick, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
         <Setter Property="Background" Value="White"/>
+        <Setter Property="Visibility" Value="{Binding IsVisible, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource BooleanToVisibilityConverter}}"/>
     </Style>
 
 </ResourceDictionary>
