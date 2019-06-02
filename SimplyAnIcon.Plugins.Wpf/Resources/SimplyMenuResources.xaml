@@ -13,7 +13,7 @@
     <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
     <Style TargetType="{x:Type MenuItem}" x:Key="SimplyAMenuItemStyle">
         <Style.Resources>
-            <ResourceDictionary Source="/PresentationFramework.Aero;component/themes/Aero.NormalColor.xaml" />
+            <ResourceDictionary Source="/PresentationFramework.Royale;component/themes/Royale.NormalColor.xaml" />
         </Style.Resources>
         <Setter Property="Command" Value="{Binding Action}"/>
         <Setter Property="Icon" Value="{StaticResource MyIcon}"/>
