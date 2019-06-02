@@ -12,6 +12,9 @@
 
     <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
     <Style TargetType="{x:Type MenuItem}" x:Key="SimplyAMenuItemStyle">
+        <Style.Resources>
+            <ResourceDictionary Source="/PresentationFramework.Aero;component/themes/Aero.NormalColor.xaml" />
+        </Style.Resources>
         <Setter Property="Command" Value="{Binding Action}"/>
         <Setter Property="Icon" Value="{StaticResource MyIcon}"/>
         <Setter Property="IsEnabled" Value="{Binding IsEnabled, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
