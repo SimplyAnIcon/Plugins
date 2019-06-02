@@ -13,7 +13,7 @@ namespace SimplyAnIcon.Plugins.Wpf.V1.MenuItemViewModels
         private bool _isEnabled = true;
         private bool _isVisible = true;
         private object _iconPath;
-        private Style _itemStyle = null;
+        private Style _itemStyle;
         private double _height = 21;
         private bool _staysOpenOnClick;
         private string _name;

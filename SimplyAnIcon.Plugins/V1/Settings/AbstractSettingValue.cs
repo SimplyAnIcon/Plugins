@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace SimplyAnIcon.Plugins.V1.Settings
+﻿namespace SimplyAnIcon.Plugins.V1.Settings
 {
     /// <summary>
     /// AbstractSettingValue

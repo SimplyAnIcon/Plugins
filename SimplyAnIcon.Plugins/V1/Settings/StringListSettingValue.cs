@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace SimplyAnIcon.Plugins.V1.Settings
 {
@@ -12,7 +11,7 @@ namespace SimplyAnIcon.Plugins.V1.Settings
         /// <summary>
         /// StringSettingValue
         /// </summary>
-        public StringListSettingValue(string key, string label, IEnumerable<KeyValuePair<string,string>> availableValues)
+        public StringListSettingValue(string key, string label, IEnumerable<KeyValuePair<string, string>> availableValues)
         {
             AvailableValues = availableValues;
             Key = key;
